@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Grocery Shop - Order Groceries</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to A& Mart</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="customer.html">Customer Details</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Customer Details</h2>
+    <p>Please fill the form for us to get your details to complete your order.</p>
+    <fieldset style="background-color: antiquewhite; border: 5px solid black;">
+      <p>Please fill out the form below for customer details:</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <br><br>
+        <label for="address">Address:</label>
+        <textarea id="address" required></textarea>
+        <br><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" required>
+        <br><br>
+        <button onclick="submitDetails()">Submit</button>
+      </form>
+    </fieldset>
+    <br><br><br><br><br><br>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 My Grocery Shop. All rights reserved.</p>
+  </footer>
+</body>
+
+<script>
+  function submitDetails() 
+  {
+    alert("Your details has been submitted. Thank you for your cooperation.");
+  }
+</script>
+
+</html>

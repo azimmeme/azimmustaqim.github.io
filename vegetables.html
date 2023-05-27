@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Grocery Shop - Products</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to A& Mart</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="customer.html">Customer Details</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2 style="text-align: center;">VEGETABLES</h2>
+  <main>
+    <p style="text-align: center;"><input style="text-align: center;" type="text" id="filterInput" placeholder="Search fruit"></p>
+    <br>
+    <table width="100%" border="1" id="tableProduct">
+      <tr>
+        <th>Vegetables</th>
+        <th>Price per (kg)</th>
+        <th>Cart</th>
+      </tr>
+      <tr>
+        <td><img src="sawi.jpg" alt="Sawi" width="100" height="100">
+            <br>Sawi
+        </td>
+        <td>RM 5.99<br><button onclick="addToCart('Sawi', 5.99)">Add to Cart</button>
+            <br><button onclick="cancelItem('Sawi')">Cancel from Cart</button>
+        </td>
+        <td rowspan="9">
+            <h3>Items in Cart:</h3>
+            <ul id="cartItems"></ul>
+          
+            <h3>Total Price: $<span id="totalPrice">0</span></h3>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="kobis.jpg" alt="Cabbage" width="100" height="100">
+            <br>Cabbage
+        </td>
+        <td>RM 2.99<br><button onclick="addToCart('Cabbage', 2.99)">Add to Cart</button>
+            <br><button onclick="cancelItem('Cabbage')">Cancel from Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="broccoli.jpg" alt="Broccoli" width="100" height="100">
+            <br>Broccoli
+        </td>
+        <td>RM 3.99 per kg<br><button onclick="addToCart('Broccoli', 3.99)">Add to Cart</button>
+            <br><button onclick="cancelItem('Broccoli')">Cancel from Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="cucumber.jpg" alt="Cucumber" width="100" height="100">
+            <br>Cucumber
+        </td>
+        <td>RM 4.99<br><button onclick="addToCart('Cucumber', 2.99)">Add to Cart</button>
+            <br><button onclick="cancelItem('Cucumber')">Cancel from Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="tomato.jpg" alt="Tomato" width="100" height="100">
+            <br>Tomato
+        </td>
+        <td>RM 7.99<br><button onclick="addToCart('Tomato', 7.99)">Add to Cart</button>
+            <br><button onclick="cancelItem('Tomato')">Cancel from Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="carrot.jpg" alt="Carrot" width="100" height="100">
+            <br>Carrot
+        </td>
+        <td>RM 8.99<br><button onclick="addToCart('Carrot', 8.99)">Add to Cart</button>
+            <br><button onclick="cancelItem('Carrot')">Cancel from Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="chili.jpg" alt="Chili" width="100" height="100">
+            <br>Chili
+        </td>
+        <td>RM 9.99<br><button onclick="addToCart('Chili', 9.99)">Add to Cart</button>
+            <br><button onclick="cancelItem('Chili')">Cancel from Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="onion.jpg" alt="Onion" width="100" height="100">
+            <br>Onion
+        </td>
+        <td>RM 7.99<br><button onclick="addToCart('Onion', 7.99)">Add to Cart</button>
+            <br><button onclick="cancelItem('Onion')">Cancel from Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="potato.jpg" alt="Potato" width="100" height="100">
+            <br>Potato
+        </td>
+        <td>RM 6.99<br><button onclick="addToCart('Potato', 5.99)">Add to Cart</button>
+            <br><button onclick="cancelItem('Potato')">Cancel from Cart</button>
+        </td>
+      </tr>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 A& Mart. All rights reserved.</p>
+  </footer>
+
+  
+
+</body>
+
+</html>

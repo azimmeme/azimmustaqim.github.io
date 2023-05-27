@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Grocery Shop - Products</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to A& Mart</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="customer.html">Customer Details</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2 style="text-align: center;">FRUITS</h2>
+  <main>
+    <p style="text-align: center;"><input style="text-align: center;" type="text" id="filterInput" placeholder="Search fruit"></p>
+    <br>
+    <table width="100%" border="1" id="tableProduct">
+      <tr>
+        <th>Fruit</th>
+        <th>Price per (kg)</th>
+        <th>Cart</th>
+      </tr>
+      <tr>
+        <td><img src="apple.jpg" alt="Apple" width="100" height="100">
+            <br>Apple
+        </td>
+        <td>RM 5.99<br><button onclick="addToCart('Apple', 5.99)">Add to Cart</button>
+            <br><button onclick="cancelItem('Apple')">Cancel from Cart</button>
+        </td>
+        <td rowspan="6">
+            <h3>Items in Cart:</h3>
+            <a id="cartItems"></a>
+          
+            <h3>Total Price: $<span id="totalPrice">0</span></h3>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="banana.jpg" alt="Banana" width="100" height="100">
+            <br>Banana
+        </td>
+        <td>RM 3.99<br><button onclick="addToCart('Banana', 3.99)">Add to Cart</button>
+            <br><button onclick="cancelItem('Banana')">Cancel from Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="watermelon.jpg" alt="Watermelon" width="100" height="100">
+            <br>Watermelon
+        </td>
+        <td>RM 4.99<br><button onclick="addToCart('Watermelon', 4.99)">Add to Cart</button>
+            <br><button onclick="cancelItem('Watermelon')">Cancel from Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="grape.jpg" alt="Grape" width="100" height="100">
+            <br>Grape
+        </td>
+        <td>RM 9.99<br><button onclick="addToCart('Grape', 9.99)">Add to Cart</button>
+            <br><button onclick="cancelItem('Grape')">Cancel from Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="orange.jpg" alt="Orange" width="100" height="100">
+            <br>Orange
+        </td>
+        <td>RM 7.99<br><button onclick="addToCart('Orange', 7.99)">Add to Cart</button>
+            <br><button onclick="cancelItem('Orange')">Cancel from Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="pineapple.jpg" alt="Pineapple" width="100" height="100">
+            <br>Pineapple
+        </td>
+        <td>RM 8.99<br><button onclick="addToCart('Pineapple', 8.99)">Add to Cart</button>
+            <br><button onclick="cancelItem('Pineapple')">Cancel from Cart</button>
+        </td>
+      </tr>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 A& Mart. All rights reserved.</p>
+  </footer>
+
+  
+
+</body>
+
+</html>

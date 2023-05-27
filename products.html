@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Grocery Shop - Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to A& Mart</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="customer.html">Customer Details</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <button onclick="playAudio()">Play Audio</button>
+
+  <audio id="myAudio">
+    <source src="music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    function playAudio() {
+      var audio = document.getElementById("myAudio");
+      audio.play();
+    }
+  </script>
+
+  <main>
+    <h2 style="text-align: center;">Our Products</h2>
+    <br>
+        <p class="p1"><a href="fruit.html"><img src="allfruit.jpg" alt="Fruit0" width="250" height="250"></a></p>
+    <br>  
+        <p class="p1"><a href="vegetables.html"><img src="allvegetables.jpg" alt="Vegetables0" width="250" height="250"></a></p>
+  </main>
+  <footer>
+    <p>&copy; 2023 A& Mart. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
